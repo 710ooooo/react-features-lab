@@ -1,0 +1,16 @@
+services:
+  react18:
+    build: ./react18
+    ports:
+      - "5180:5173"
+    volumes:
+      - ./react18:/app
+      - /app/node_modules # ホストの node_modules で上書きしないよう匿名ボリュームで保護
+
+  react19:
+    build: ./react19
+    ports:
+      - "5190:5173"
+    volumes:
+      - ./react19:/app
+      - /app/node_modules

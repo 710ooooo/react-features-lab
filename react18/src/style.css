@@ -1,0 +1,13 @@
+:root { font-family: system-ui, sans-serif; color-scheme: light dark; }
+body { margin: 0; }
+.layout { display: flex; min-height: 100vh; }
+nav { width: 240px; padding: 16px; border-right: 1px solid #8884; display: flex; flex-direction: column; gap: 6px; }
+nav h1 { font-size: 1.1rem; margin: 0 0 12px; }
+nav button { text-align: left; padding: 8px 10px; border: 1px solid #8884; border-radius: 6px; background: none; color: inherit; cursor: pointer; }
+nav button.active { background: #61dafb33; border-color: #61dafb; }
+main { flex: 1; padding: 24px; max-width: 760px; }
+main h2 { margin-top: 0; }
+.note { opacity: 0.75; font-size: 0.9rem; }
+.pending { opacity: 0.5; }
+input, button { font: inherit; }
+ul.items { max-height: 320px; overflow: auto; }
